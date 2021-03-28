@@ -6,7 +6,7 @@ LABEL Fuchi Corp <fuchicorpsolution@gmail.com>
 ENV DOCKERVERSION=18.03.1-ce
 
 ## Installing wget command
-RUN yum install wget -y && yum clean all
+RUN yum install wget telnet vim -y && yum clean all
 
 ##Installing helm 
 RUN curl https://storage.googleapis.com/kubernetes-helm/helm-v2.14.0-linux-amd64.tar.gz > ./helm.tar.gz \
